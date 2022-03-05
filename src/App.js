@@ -1,13 +1,18 @@
 import React from "react";
-import WeatherSearch from "./WeatherSearch";
-import "./App.css";
+import Weather from "./Weather";
+import "./Weather.css";
+import "./App.css"
 
 export default function App() {
   return (
     <div className="App">
+      <div className="container">
       <h1>Weather Search Engine</h1>
-      <WeatherSearch />
+      <Weather defaultCity="New York"/>
+      <footer>
       <a href="https://github.com/MaariaCaroline/weather-react">Open-source code</a>
+      </footer>
+    </div>
     </div>
   );
 }
